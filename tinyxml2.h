@@ -35,6 +35,7 @@ distribution.
 #else
 #include <cctype>   // for isalpha, isdigit, isspace
 #include <climits>  // for INT_MAX
+#include <cstdarg>  // for va_start, va_end
 #include <cstdio>   // for snprintf, sscanf, FILE, size_t
 #include <cstring>  // for size_t, memcpy
 #endif
