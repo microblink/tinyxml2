@@ -1,4 +1,5 @@
 # Python program to set the version.
+# Copyright by Lee Thomason (www.grinninglizard.com)
 ##############################################
 
 import re
@@ -18,14 +19,14 @@ def fileProcess( name, lineFunction ):
 		if not line: break
 		output += lineFunction( line )
 	filestream.close()
-	
+
 	if not output: return			# basic error checking
-	
+
 	print( "Writing file " + name )
 	filestream = open( name, "w" );
 	filestream.write( output );
 	filestream.close()
-	
+
 def echoInput( line ):
 	return line
 
@@ -120,4 +121,3 @@ print( '   OR       git tag -a ' + versionStr + ' -m [tag message]' )
 print( 'Remember to "git push" both code and tag. For the tag:' )
 print( 'git push origin [tagname]')
 
- 
